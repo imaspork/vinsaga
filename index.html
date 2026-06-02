@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPair – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f6f2;
+      --surface: #ffffff;
+      --accent: #1a1a2e;
+      --accent-light: #e8e6ff;
+      --text: #1c1c1e;
+      --muted: #6b6b72;
+      --border: #e2e0da;
+      --blue: #2563eb;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 0 1rem;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 6px 16px 6px 8px;
+      margin-bottom: 2rem;
+    }
+
+    .app-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .app-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: white;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+
+    .app-badge span {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .effective {
+      display: inline-block;
+      margin-top: 1.25rem;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 0 6rem;
+    }
+
+    .highlight-card {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 16px;
+      padding: 2rem 2.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .highlight-card .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.75rem;
+    }
+
+    .highlight-card p {
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.9);
+      font-weight: 300;
+    }
+
+    .highlight-card strong {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 0.975rem;
+      line-height: 1.75;
+      color: #3a3a40;
+      font-weight: 300;
+    }
+
+    p + p {
+      margin-top: 0.85rem;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 1rem;
+    }
+
+    .pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 5px 14px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .pill.yes {
+      background: #ecfdf5;
+      border-color: #6ee7b7;
+      color: #065f46;
+    }
+
+    .pill.no {
+      background: #fef2f2;
+      border-color: #fca5a5;
+      color: #991b1b;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem 2.25rem;
+    }
+
+    .contact-card a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      .highlight-card { padding: 1.5rem; }
+      .contact-card { padding: 1.25rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="app-badge">
+      <div class="app-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+          <path d="M16 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+          <path d="M12 10h0"/>
+        </svg>
+      </div>
+      <span>AutoPair for iOS</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">We built AutoPair to be simple and private. Here's exactly how we handle your data.</p>
+    <span class="effective">Effective June 1, 2025</span>
+  </header>
+
+  <main>
+
+    <div class="highlight-card">
+      <div class="label">The short version</div>
+      <p><strong>AutoPair collects no personal data.</strong> The app manages Bluetooth connections on your device and nothing is ever stored, transmitted, or shared. What happens on your device, stays on your device.</p>
+    </div>
+
+    <section>
+      <h2>What we collect</h2>
+      <p>AutoPair does not collect, store, or transmit any personal information. The app operates entirely on your device to manage Bluetooth device connections.</p>
+      <div class="pill-list">
+        <span class="pill no">No personal data</span>
+        <span class="pill no">No analytics</span>
+        <span class="pill no">No crash reports</span>
+        <span class="pill no">No advertising IDs</span>
+        <span class="pill yes">Bluetooth access (on-device only)</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Bluetooth access</h2>
+      <p>AutoPair requires access to your device's Bluetooth functionality in order to discover and manage device pairings. This access is used solely to perform the core function of the app. No Bluetooth data, device names, or pairing history is stored or sent anywhere.</p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <p>AutoPair does not use any third-party analytics, advertising, or crash-reporting services. There are no SDKs or frameworks embedded in the app that collect data.</p>
+    </section>
+
+    <section>
+      <h2>Data retention</h2>
+      <p>Because we collect no data, there is nothing to retain or delete. All Bluetooth operations are handled in real time on your device and nothing is persisted beyond your active app session.</p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>AutoPair does not collect any information from anyone, including children under the age of 13. The app is safe for use by all ages.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If we ever update this privacy policy, the new version will be posted at this URL with a revised effective date. We encourage you to review this page periodically. Any future changes will not be retroactive.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p>Have questions about this privacy policy or AutoPair? We'd love to hear from you.</p>
+        <p style="margin-top: 1rem;">Tyler Strong &mdash; <a href="mailto:tyler@example.com">tyler@example.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>AutoPair &copy; 2025 Tyler Strong</p>
+    <p>All rights reserved</p>
+  </footer>
+
+</body>
+</html>
