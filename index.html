@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AutoPair – Privacy Policy</title>
+  <title>Vinsaga – Support & FAQ</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -133,8 +133,43 @@
       font-weight: 500;
     }
 
+    nav.toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 3rem;
+    }
+
+    nav.toc .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    nav.toc ol {
+      list-style: none;
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    nav.toc a {
+      font-size: 0.925rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    nav.toc a:hover {
+      color: var(--blue);
+    }
+
     section {
       margin-bottom: 2.75rem;
+      scroll-margin-top: 2rem;
     }
 
     h2 {
@@ -147,6 +182,17 @@
       border-bottom: 1px solid var(--border);
     }
 
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .qa + .qa {
+      margin-top: 1.5rem;
+    }
+
     p {
       font-size: 0.975rem;
       line-height: 1.75;
@@ -156,6 +202,19 @@
 
     p + p {
       margin-top: 0.85rem;
+    }
+
+    ul.plain {
+      margin-top: 0.6rem;
+      padding-left: 1.15rem;
+    }
+
+    ul.plain li {
+      font-size: 0.975rem;
+      line-height: 1.7;
+      color: #3a3a40;
+      font-weight: 300;
+      margin-bottom: 0.35rem;
     }
 
     .pill-list {
@@ -225,6 +284,7 @@
     @media (max-width: 600px) {
       .highlight-card { padding: 1.5rem; }
       .contact-card { padding: 1.25rem 1.5rem; }
+      nav.toc { padding: 1.25rem 1.5rem; }
     }
   </style>
 </head>
@@ -234,74 +294,188 @@
     <div class="app-badge">
       <div class="app-icon">
         <svg viewBox="0 0 24 24">
-          <path d="M8 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
-          <path d="M16 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
-          <path d="M12 10h0"/>
+          <path d="M3 13l2-6a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 6" />
+          <path d="M3 13v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5" />
+          <path d="M3 13h18" />
+          <path d="M7 17h0" />
+          <path d="M17 17h0" />
         </svg>
       </div>
-      <span>AutoPair for iOS</span>
+      <span>Vinsaga for iOS</span>
     </div>
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">We built AutoPair to be simple and private. Here's exactly how we handle your data.</p>
-    <span class="effective">Effective June 1, 2025</span>
+    <h1>Support & FAQ</h1>
+    <p class="subtitle">Everything you need to know about logging service history in Vinsaga — and how to reach us if something's not working right.</p>
+    <span class="effective">Last updated July 9, 2026</span>
   </header>
 
   <main>
 
     <div class="highlight-card">
-      <div class="label">The short version</div>
-      <p><strong>AutoPair collects no personal data.</strong> The app manages Bluetooth connections on your device and nothing is ever stored, transmitted, or shared. What happens on your device, stays on your device.</p>
+      <div class="label">Need help fast?</div>
+      <p>Email us at <strong>support@vinsaga.app</strong> and we'll get back to you within 1–2 business days. Most issues are fixed by updating to the latest version of the app.</p>
     </div>
 
-    <section>
-      <h2>What we collect</h2>
-      <p>AutoPair does not collect, store, or transmit any personal information. The app operates entirely on your device to manage Bluetooth device connections.</p>
-      <div class="pill-list">
-        <span class="pill no">No personal data</span>
-        <span class="pill no">No analytics</span>
-        <span class="pill no">No crash reports</span>
-        <span class="pill no">No advertising IDs</span>
-        <span class="pill yes">Bluetooth access (on-device only)</span>
+    <nav class="toc">
+      <div class="label">On this page</div>
+      <ol>
+        <li><a href="#basics">Getting started</a></li>
+        <li><a href="#logging">Logging services</a></li>
+        <li><a href="#vehicles">Managing vehicles</a></li>
+        <li><a href="#import">Importing from CSV</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#data">Your data & privacy</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <section id="basics">
+      <h2>Getting started</h2>
+
+      <div class="qa">
+        <h3>What is Vinsaga?</h3>
+        <p>Vinsaga is a maintenance log for your vehicles. Add every car you own, then record each service — oil changes, repairs, inspections, anything — with the date, mileage, cost, notes, and photos. Your whole service history lives in one place instead of scattered receipts and text threads with your mechanic.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Do I need an account to use Vinsaga?</h3>
+        <p>No. Vinsaga works right away with no sign-up required. Your vehicles and service history are stored on your device.</p>
+      </div>
+
+      <div class="qa">
+        <h3>How many vehicles can I add?</h3>
+        <p>As many as you like. Each vehicle gets its own service history, and your Garage shows a summary across all of them — total services, total vehicles, and your most recent service date.</p>
       </div>
     </section>
 
-    <section>
-      <h2>Bluetooth access</h2>
-      <p>AutoPair requires access to your device's Bluetooth functionality in order to discover and manage device pairings. This access is used solely to perform the core function of the app. No Bluetooth data, device names, or pairing history is stored or sent anywhere.</p>
+    <section id="logging">
+      <h2>Logging services</h2>
+
+      <div class="qa">
+        <h3>How do I log a service?</h3>
+        <p>Tap the add button, choose the vehicle, pick a service type, then fill in the date, mileage, and any notes. You can add photos before saving, or come back and add them later.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Can I edit or delete a service entry after saving it?</h3>
+        <p>Yes. Open the entry from your service history and tap the edit icon to update any field, including photos.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Can I track cost per service?</h3>
+        <p>Yes. Add a cost to any service entry and it'll appear alongside that entry in your history, so you can see what you've spent over time.</p>
+      </div>
+
+      <div class="qa">
+        <h3>What if I don't know the exact date or mileage?</h3>
+        <p>Date and mileage are the only two required fields — everything else, including notes, cost, and photos, is optional. Enter your best estimate; you can always correct it later.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Third-party services</h2>
-      <p>AutoPair does not use any third-party analytics, advertising, or crash-reporting services. There are no SDKs or frameworks embedded in the app that collect data.</p>
+    <section id="vehicles">
+      <h2>Managing vehicles</h2>
+
+      <div class="qa">
+        <h3>How do I add a new vehicle?</h3>
+        <p>From your Garage, tap add and start typing the make. Vinsaga suggests matching models as you type. You can also add a purchase date, mileage, VIN, and a photo.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Is the VIN required?</h3>
+        <p>No, VIN is optional. It's there if you want a permanent record tied to the vehicle, but you can use Vinsaga fully without entering one.</p>
+      </div>
+
+      <div class="qa">
+        <h3>What happens to a vehicle's history if I remove it?</h3>
+        <p>Removing a vehicle removes its service history along with it. If you want to keep a record before removing a vehicle, we'd recommend exporting or backing up first.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Data retention</h2>
-      <p>Because we collect no data, there is nothing to retain or delete. All Bluetooth operations are handled in real time on your device and nothing is persisted beyond your active app session.</p>
+    <section id="import">
+      <h2>Importing from CSV</h2>
+
+      <div class="qa">
+        <h3>Can I bring in service history I already have in a spreadsheet?</h3>
+        <p>Yes. From a vehicle's page, choose Import CSV, then select your file. Your file should have a header row — date, mileage, and service type are the recommended columns.</p>
+      </div>
+
+      <div class="qa">
+        <h3>What if my CSV columns aren't named exactly what Vinsaga expects?</h3>
+        <p>After choosing your file, you'll get a Map Columns screen where you match each of your CSV's columns to Vinsaga's fields — date, mileage, service type, and notes. Date and mileage are required; everything else is optional.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Does Vinsaga handle different date formats?</h3>
+        <p>Yes. The import screen auto-detects your date format and shows you a live preview (for example, converting "4/10/2024" to "Apr 10, 2024") so you can confirm it's reading your file correctly before importing.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Will importing create duplicate entries if I run it twice?</h3>
+        <p>Each import adds new entries — it doesn't check against your existing history for duplicates. If you're unsure whether a file was already imported, double-check your service history before importing again.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Children's privacy</h2>
-      <p>AutoPair does not collect any information from anyone, including children under the age of 13. The app is safe for use by all ages.</p>
+    <section id="photos">
+      <h2>Photos</h2>
+
+      <div class="qa">
+        <h3>How many photos can I attach to a service entry?</h3>
+        <p>You can attach multiple photos to a single entry — swipe through them from the entry's detail page.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Can I take a photo directly in the app, or only choose from my library?</h3>
+        <p>Both. When adding a photo, you can take a new one with your camera or choose an existing one from your photo library.</p>
+      </div>
+
+      <div class="qa">
+        <h3>Where are my photos stored?</h3>
+        <p>Photos you attach are stored with the app on your device, alongside the rest of your service history.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Changes to this policy</h2>
-      <p>If we ever update this privacy policy, the new version will be posted at this URL with a revised effective date. We encourage you to review this page periodically. Any future changes will not be retroactive.</p>
+    <section id="data">
+      <h2>Your data & privacy</h2>
+      <p>Vinsaga is built to keep your vehicle data yours. We don't sell your data or share it with advertisers.</p>
+      <div class="pill-list">
+        <span class="pill no">No ads</span>
+        <span class="pill no">No data selling</span>
+        <span class="pill yes">Your history, your device</span>
+      </div>
+      <p style="margin-top: 1rem;">For the full details on what's collected and how it's handled, see our <a href="vinsaga-privacy-policy.html">Privacy Policy</a>.</p>
     </section>
 
-    <section>
-      <h2>Contact</h2>
+    <section id="troubleshooting">
+      <h2>Troubleshooting</h2>
+
+      <div class="qa">
+        <h3>The app crashed or froze — what should I do?</h3>
+        <p>First, make sure you're on the latest version of Vinsaga from the App Store, then restart the app. If the issue continues, email us with your device model and iOS version so we can look into it.</p>
+      </div>
+
+      <div class="qa">
+        <h3>I imported a CSV and some rows are missing or wrong.</h3>
+        <p>This is almost always a column mapping or date format issue. Try the import again and double-check the Map Columns screen, particularly the date format preview, before confirming.</p>
+      </div>
+
+      <div class="qa">
+        <h3>I found a bug. How do I report it?</h3>
+        <p>Email us at support@vinsaga.app with a description of what happened, the steps to reproduce it if you can, and your device model and iOS version. Screenshots help a lot.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact us</h2>
       <div class="contact-card">
-        <p>Have questions about this privacy policy or AutoPair? We'd love to hear from you.</p>
-        <p style="margin-top: 1rem;">Tyler Strong &mdash; <a href="mailto:tyler@example.com">tyler@example.com</a></p>
+        <p>Questions, feedback, or something not working the way it should? We'd love to hear from you.</p>
+        <p style="margin-top: 1rem;">Vinsaga Support &mdash; <a href="mailto:support@vinsaga.app">support@vinsaga.app</a></p>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <p>AutoPair &copy; 2025 Tyler Strong</p>
+    <p>Vinsaga &copy; 2026</p>
     <p>All rights reserved</p>
   </footer>
 
