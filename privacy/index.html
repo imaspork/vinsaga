@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinsaga – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f6f2;
+      --surface: #ffffff;
+      --accent: #1a1a2e;
+      --accent-light: #e8e6ff;
+      --text: #1c1c1e;
+      --muted: #6b6b72;
+      --border: #e2e0da;
+      --blue: #2563eb;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 0 1rem;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 6px 16px 6px 8px;
+      margin-bottom: 2rem;
+    }
+
+    .app-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .app-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: white;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+
+    .app-badge span {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .effective {
+      display: inline-block;
+      margin-top: 1.25rem;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 0 6rem;
+    }
+
+    .highlight-card {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 16px;
+      padding: 2rem 2.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .highlight-card .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.75rem;
+    }
+
+    .highlight-card p {
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.9);
+      font-weight: 300;
+    }
+
+    .highlight-card strong {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 0.975rem;
+      line-height: 1.75;
+      color: #3a3a40;
+      font-weight: 300;
+    }
+
+    p + p {
+      margin-top: 0.85rem;
+    }
+
+    ul.plain {
+      margin-top: 0.6rem;
+      padding-left: 1.15rem;
+    }
+
+    ul.plain li {
+      font-size: 0.975rem;
+      line-height: 1.7;
+      color: #3a3a40;
+      font-weight: 300;
+      margin-bottom: 0.35rem;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 1rem;
+    }
+
+    .pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 5px 14px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .pill.yes {
+      background: #ecfdf5;
+      border-color: #6ee7b7;
+      color: #065f46;
+    }
+
+    .pill.no {
+      background: #fef2f2;
+      border-color: #fca5a5;
+      color: #991b1b;
+    }
+
+    .note-card {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
+    }
+
+    .note-card .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #92400e;
+      margin-bottom: 0.6rem;
+    }
+
+    .note-card p {
+      font-size: 0.9rem;
+      color: #78350f;
+      line-height: 1.65;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem 2.25rem;
+    }
+
+    .contact-card a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      .highlight-card { padding: 1.5rem; }
+      .contact-card { padding: 1.25rem 1.5rem; }
+      .note-card { padding: 1.25rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="app-badge">
+      <div class="app-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 13l2-6a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 6" />
+          <path d="M3 13v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5" />
+          <path d="M3 13h18" />
+          <path d="M7 17h0" />
+          <path d="M17 17h0" />
+        </svg>
+      </div>
+      <span>Vinsaga for iOS</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Vinsaga is built to keep your vehicle history yours. Here's exactly what the app does and doesn't do with your data.</p>
+    <span class="effective">Effective July 9, 2026</span>
+  </header>
+
+  <main>
+
+    <div class="note-card">
+      <div class="label">Before you publish this</div>
+      <p>This policy is written assuming Vinsaga stores everything locally on-device, with no account, cloud sync, analytics, or third-party SDKs — based on what's visible in the app today. If Vinsaga uses iCloud/CloudKit sync, any analytics or crash reporting tool, or sends data off-device in any way, those sections below need to be updated to reflect that accurately before this goes live. Apple checks that your privacy policy matches your actual data practices and your App Privacy "nutrition label," so accuracy here matters for review.</p>
+    </div>
+
+    <div class="highlight-card">
+      <div class="label">The short version</div>
+      <p><strong>Vinsaga does not collect or transmit your personal data.</strong> Your vehicles, service history, notes, and photos are stored on your device. Nothing is uploaded, sold, or shared with third parties.</p>
+    </div>
+
+    <section>
+      <h2>What we collect</h2>
+      <p>Vinsaga does not collect, store on our servers, or transmit any personal information. The app operates entirely on your device to manage your vehicle and service records.</p>
+      <div class="pill-list">
+        <span class="pill no">No personal data collected</span>
+        <span class="pill no">No analytics</span>
+        <span class="pill no">No advertising IDs</span>
+        <span class="pill no">No account required</span>
+        <span class="pill yes">Vehicle data (on-device only)</span>
+        <span class="pill yes">Photos (on-device only)</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Information you enter</h2>
+      <p>When you use Vinsaga, you may enter information such as vehicle make, model, VIN, mileage, service dates, costs, notes, and photos. This information is stored locally on your device to power the app's core features — building and displaying your service history. We do not have access to this information, and it is not sent to us or any third party.</p>
+    </section>
+
+    <section>
+      <h2>Camera and photo library access</h2>
+      <p>Vinsaga requests access to your camera and photo library so you can attach photos to service entries — for example, a picture of a completed repair or a receipt. Photos you choose or take are stored with the app on your device. We do not access, view, or transmit your photo library beyond the specific photos you choose to attach.</p>
+    </section>
+
+    <section>
+      <h2>CSV import</h2>
+      <p>If you import service history from a CSV file, that file is read and processed entirely on your device to populate your service log. The file itself is not uploaded to us or any third party.</p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <p>Vinsaga does not use any third-party analytics, advertising, or crash-reporting services. There are no SDKs or frameworks embedded in the app that collect or transmit your data.</p>
+    </section>
+
+    <section>
+      <h2>Data retention and deletion</h2>
+      <p>Because your data is stored on your device and not on our servers, you're always in control of it. You can delete any vehicle or service entry directly in the app at any time. Uninstalling Vinsaga removes all app data from your device, in line with standard iOS app behavior.</p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>Vinsaga does not knowingly collect any information from anyone, including children under the age of 13. The app does not target children and is intended for general audiences managing vehicle maintenance.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If we update this privacy policy, the revised version will be posted at this URL with an updated effective date. We encourage you to review this page periodically. Material changes will not be applied retroactively without notice.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p>Have questions about this privacy policy or how Vinsaga handles your data? We'd love to hear from you.</p>
+        <p style="margin-top: 1rem;">Tyler Strong &mdash; <a href="mailto:tylerstrongdev@gmail.com">tylerstrongdev@gmail.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Vinsaga &copy; 2026 Tyler Strong</p>
+    <p>All rights reserved</p>
+  </footer>
+
+</body>
+</html>
